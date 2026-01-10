@@ -1,80 +1,287 @@
-WedLink – Wedding Organizer Service Platform
+=======
+# 🚀 Final Project RPL — WeddingLink
 
-Final Project Rekayasa Perangkat Lunak  
-Kelompok: 9 
-Anggota:  
-1. Nadhif Pandya Supriyadi (701230024)  
-2. Novi Astina Wijayanti (701230088)  
-3. Dewi Lupiani (701230054)  
-Dosen Pengampu:Dila Nurlaila, M.Kom.
+<p align="center">
+  <img src="assets/banner.jpg" alt="WeddingLink Banner" width="100%">
+</p>
 
-Deskripsi Aplikasi
-WedLink adalah aplikasi berbasis web yang dirancang untuk mempermudah proses pemesanan layanan Wedding Organizer. Aplikasi ini menyediakan informasi paket, harga, vendor, hingga fitur booking dan jadwal acara, sehingga calon customer dapat melihat detail layanan tanpa harus menghubungi admin secara manual. WedLink juga membantu admin dalam mengelola paket, customer, dan laporan pemesanan dengan lebih efisien.
+<p align="center">
+  <!-- WeddingLink -->
+  <a href="https://weddinglink.ct.ws" target="_blank">
+    <img alt="WeddingLink" src="https://img.shields.io/badge/WeddingLink-Website-blue?logo=google-chrome&logoColor=white&style=for-the-badge" />
+  </a>
 
+  <!-- PHP -->
+  <a href="https://www.php.net/" target="_blank">
+    <img alt="PHP" src="https://img.shields.io/badge/PHP-8.2+-777BB4?logo=php&logoColor=white&style=for-the-badge" />
+  </a>
 
-Tujuan & Masalah yang Diselesaikan
--Masalah:Informasi paket WO sering tersebar di media sosial dan harus ditanyakan manual ke admin. Proses booking, jadwal fitting, hingga budgeting masih dilakukan secara manual dan memakan waktu.  
--Solusi:WedLink menyediakan pusat informasi layanan WO yang jelas, sistem pemesanan online, penjadwalan acara, serta budgeting otomatis sehingga proses lebih cepat, praktis, dan transparan.
+  <!-- MySQL -->
+  <a href="https://www.mysql.com/" target="_blank">
+    <img alt="MySQL" src="https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white&style=for-the-badge" />
+  </a>
 
-Teknologi yang Digunakan
-- Backend: Laravel 10 (PHP 8.x)  
-- Frontend: Blade Template + Bootstrap 5  
-- Database: MySQL  
-- Arsitektur: MVC + RESTful  
-- Tools: Composer, Node.js
-- Storage: Laravel Local Storage  
+  <!-- Bootstrap -->
+  <a href="https://getbootstrap.com/" target="_blank">
+    <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge" />
+  </a>
 
-Cara Menjalankan Aplikasi (Lokal)
-1.Clone Repository
-git clone <https://github.com/nadhifpandyas/weddinglink>
-cd wedlink
-
-2.Instalasi Dependency
-composer install
-npm install
-
-3.Konfigurasi Environment
-Salin konfigurasi:
-cp .env.example .env
-
-Sesuaikan database di file `.env`.
-
-4.Generate APP Key & Migrasi Database
-php artisan key:generate
-php artisan migrate
-
-5.Jalankan Project
-php artisan serve
-npm run dev
-
-Buka di browser:http://localhost:8000
+  <!-- License -->
+  <a href="https://github.com/nadhifpandyas/weddinglink/blob/main/LICENSE" target="_blank">
+    <img alt="License" src="https://img.shields.io/badge/License-MIT-green?logo=open-source-initiative&logoColor=white&style=for-the-badge" />
+  </a>
+</p>
 
 
-Akun Demo (Untuk Pengujian)  
-Jika ingin mencoba fitur tanpa mendaftar:
+---
 
-1.Admin:
-- Email: admin@weddinglink.com 
-- Password: password
+## 👥 Identitas Kelompok
+- **Nama Kelompok :** 9
+- **Anggota & Jobdesk :**
 
-2.Vendor: 
-- Email:foto@weddinglink.com  
-- Password:password
+| Nama Anggota                            | Tugas / Jobdesk                                                                                                                                                                                                                                                                                                         |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nadhif Pandya Supriyadi (701230024)** | •Membuat Use Case, Activity, Sequence, ERD, dan Class Diagram.<br>•Mengembangkan program menggunakan PHP Native.<br>•Mengimplementasikan CRUD dan session login.<br>•Mendesain struktur tabel MySQL dan menyediakan file **database.sql**.<br>•Melakukan deployment menggunakan FileZilla ke InfinityFree serta pengecekan pasca-upload. |
+| **Novi Astina Wijayanti (701230088)**   | •Merapikan struktur dokumen SRS.<br>•Membuat diagram arsitektur sistem monolitik.<br>•Mengumpulkan kebutuhan fungsional.<br>•Menulis README yang menjelaskan instalasi dan fitur aplikasi.                                                                                                                                           |
+| **Dewi Lupiani (701230054)**            | •Menyusun kebutuhan non-fungsional.<br>•Menuliskan deskripsi fitur utama secara runtut.<br>•Membuat batasan sistem dan asumsi penggunaan.<br>•Menyusun slide PPT presentasi.<br>•Menyusun dan melakukan User Acceptance Testing untuk kelompok 11.                                                                                       |
 
-3.Customer: 
-- Email:customer@weddinglink.com
-- Password: password
+---
 
-Link Deployment & Demo
-Link Deployment : https://weddinglink.ct.ws/
-Link Demo Video :
+## 📱 Deskripsi Singkat Aplikasi
 
+WeddingLink adalah platform web yang menghubungkan calon pengantin dengan penyedia jasa pernikahan. Aplikasi ini memfasilitasi proses pencarian, pemesanan, dan pembayaran berbagai jasa pernikahan seperti fotografi, dekorasi, catering, dan makeup dalam satu sistem terintegrasi.
 
-Catatan Tambahan :
-- Fitur lupa password membutuhkan konfigurasi SMTP agar email verifikasi berfungsi.  
-- Upload gambar dibatasi maksimal 2MB (format JPG/PNG).  
-- Sistem hanya tersedia dalam bentuk website (belum ada aplikasi mobile).  
-- Beberapa fitur lanjutan seperti undangan digital dan analitik lengkap belum tersedia pada versi pertama.
+---
 
+## 🎯 Tujuan Sistem / Permasalahan yang Diselesaikan
 
-Dibuat untuk memenuhi tugas Final Project mata kuliah Rekayasa Perangkat Lunak, Program Studi Sistem Informasi, UIN Sultan Thaha Saifuddin Jambi, 2025.
+**Permasalahan:**
+
+1. Kesulitan mencari vendor pernikahan yang terpercaya
+2. Proses booking yang manual dan tidak terpusat
+3. Sulitnya membandingkan harga dan paket dari berbagai vendor
+4. Tidak adanya sistem pembayaran dan tracking yang terintegrasi
+
+**Solusi yang Ditawarkan:**
+
+1. Marketplace terpusat untuk semua vendor pernikahan
+2. Sistem booking online dengan konfirmasi real-time
+3. Perbandingan harga dan paket dalam satu platform
+4. Sistem pembayaran terintegrasi dengan tracking status
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+**Backend**
+
+1. PHP 8.2+ - Bahasa pemrograman utama
+2. MySQL - Database management system
+3. PDO - Database connection dengan prepared statements
+4. Sessions - Manajemen autentikasi
+
+**Frontend**
+
+1. Bootstrap 5.3 - Framework CSS responsive
+2. Font Awesome 6 - Icon library
+3. Vanilla JavaScript - Interaktivitas client-side
+4. Custom CSS - Styling tambahan
+
+**Security Features**
+
+1. CSRF Protection - Token security untuk semua form
+2. SQL Injection Prevention - Prepared statements
+3. XSS Protection - Input sanitization dengan htmlspecialchars()
+4. File Upload Security - Validasi type, size, dan content
+5. Password Hashing - Bcrypt password encryption
+6. Session Security - Regenerasi session ID
+
+---
+
+## 🚀 Cara Menjalankan Aplikasi
+
+### Cara Instalasi
+
+1. Clone repository:
+
+```bash
+git clone https://github.com/nadhifpandyas/weddinglink.git
+```
+
+2. Pindah ke direktori project:
+
+```bash
+cd weddinglink
+```
+
+3. Pastikan XAMPP/Laragon sudah terinstal
+
+### Cara Konfigurasi
+
+1. Import database:
+
+   * Buka phpMyAdmin (`http://localhost/phpmyadmin`)
+   * Buat database baru bernama `weddinglink`
+   * Import file `weddinglink.sql` yang ada di folder project
+
+2. Konfigurasi koneksi database:
+
+   * Buka file `config.php`
+   * Sesuaikan konfigurasi database:
+
+```php
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'weddinglink');
+define('DB_USER', 'root');
+define('DB_PASS', ''); 
+```
+
+3. Konfigurasi folder uploads:
+
+   * Pastikan folder `uploads/payments/` memiliki permission write
+   * Di Windows: Klik kanan folder → Properties → Security → Edit permissions
+   * Di Linux: `chmod 755 uploads/payments/`
+
+### Cara Menjalankan (Run Project)
+
+1. Start Apache dan MySQL di XAMPP/WAMP
+2. Letakkan folder project di `htdocs` (XAMPP) atau `www` (WAMP)
+3. Buka browser dan akses:
+
+```
+http://localhost/weddinglink/
+```
+
+atau
+
+```
+http://localhost/weddinglink/index.php
+```
+
+---
+
+## 🔑 Akun Demo
+
+**Admin:**
+
+* Username: `admin@weddinglink.com`
+* Password: `password`
+
+**Vendor:**
+
+* Username: `foto@weddinglink.com`
+* Password: `password`
+
+**Customer:**
+
+* Username: `customer@weddinglink.com`
+* Password: `password`
+
+---
+
+## 🌐 Link Deployment
+
+* **Website WeddingLink:** [https://weddinglink.ct.ws/](https://weddinglink.ct.ws/)
+* **Repository GitHub:** [https://github.com/nadhifpandyas/weddinglink.git](https://github.com/nadhifpandyas/weddinglink.git)
+* **Demo Video:** [Link YouTube Demo](https://youtu.be/IoTgQHpKeKY?si=oki_KbvHfjIHZJzp)
+
+---
+
+## 📸 Screenshot Halaman Utama
+
+### Halaman Login
+
+![Login Page](assets/login.png)
+
+### Dashboard Admin
+
+![Admin Dashboard](assets/dashboard.png)
+
+### Daftar Paket
+
+![Packages List](assets/packages.png)
+
+### Halaman Pemesanan
+
+![Order Page](assets/orders.png)
+
+---
+
+## 📝 Catatan Tambahan
+
+### Keterbatasan Sistem
+
+1. **Pembayaran:** Sistem hanya mendukung manual transfer dengan upload bukti, belum terintegrasi dengan payment gateway
+2. **Notifikasi:** Belum ada sistem notifikasi real-time (email/WhatsApp)
+3. **Mobile App:** Hanya tersedia versi web, belum ada aplikasi mobile
+4. **Multi-language:** Hanya tersedia dalam Bahasa Indonesia
+
+### Fitur yang Belum Selesai
+
+1. ❌ Sistem rating dan review untuk vendor
+2. ❌ Fitur chat antara customer dan vendor
+3. ❌ Export laporan ke format PDF/Excel
+4. ❌ Calendar view untuk booking
+5. ❌ Integrasi dengan Google Maps untuk lokasi vendor
+
+### Petunjuk Penggunaan Khusus
+
+1. **Untuk Vendor:** Setelah registrasi, tunggu verifikasi dari admin sebelum dapat menambahkan paket
+2. **Upload Bukti Bayar:** Hanya menerima file JPG/PNG maksimal 2MB
+3. **Status Order:**
+
+   * Pending: Menunggu konfirmasi vendor
+   * Confirmed: Dikonfirmasi vendor
+   * In Progress: Sedang diproses
+   * Completed: Selesai
+   * Cancelled: Dibatalkan
+4. **Demo Data:** Database sudah include sample data untuk testing
+
+### Troubleshooting
+
+1. **Error koneksi database:** Pastikan MySQL berjalan dan konfigurasi di config.php benar
+2. **Upload gagal:** Cek permission folder uploads/payments/
+3. **Halaman blank:** Cek error log di `logs/error.log` atau aktifkan error reporting di config.php
+4. **Login gagal:** Pastikan menggunakan akun demo yang benar atau reset password melalui phpMyAdmin
+
+---
+
+## 📚 Keterangan Tugas
+
+Project ini dibuat untuk memenuhi **Tugas Final Project Mata Kuliah Rekayasa Perangkat Lunak**
+
+**Dosen Pengampu:**
+
+* **Nama:** Dila Nurlaila, M.Kom.
+* **Mata Kuliah:** Rekayasa Perangkat Lunak
+* **Program Studi:** Sistem Informasi
+* **Universitas:** UIN STS Jambi
+
+---
+
+### Scope Project yang Dikembangkan:
+
+1. ✅ Analisis kebutuhan dan perancangan sistem
+2. ✅ Implementasi database dengan MySQL
+3. ✅ Pengembangan backend dengan PHP native
+4. ✅ Implementasi frontend dengan Bootstrap
+5. ✅ Testing dan debugging
+6. ✅ Dokumentasi sistem
+
+### Fitur Wajib yang Telah Diterapkan:
+
+1. ✅ Sistem login/register multi-role
+2. ✅ CRUD untuk semua entitas utama
+3. ✅ Sistem pembayaran dengan upload bukti
+4. ✅ Manajemen order dengan berbagai status
+5. ✅ Dashboard dengan statistik per role
+6. ✅ Responsive design
+
+---
+
+## 📄 Lisensi
+
+© 2025 WeddingLink - Kelompok 9 RPL
+
+---
+
